@@ -5,6 +5,18 @@ const form = document.querySelector('#form-itens');
 const itensInput = document.querySelector('#receber-item');
 const ulItens = document.querySelector('#lista-de-itens');
 const ulItensComprados = document.querySelector('#itens-comprados');
+const listaRecuperada = localStorage.getItem('listaDeItens');
+
+function atualizaLocalStorage() {
+    localStorage.setItem('listaDeItens', JSON.stringify(listaDeItens));
+}
+
+if(listaRecuperada) {
+    listaDeItens = JSON.parse(listaRecuperada);
+    mostrarItem();
+} else {
+    listaDeItens = [];
+}
 
 form.addEventListener('submit', function (evento) {
     evento.preventDefault();
@@ -53,7 +65,7 @@ function mostrarItem() {
                 <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
                     <div>
                         <input type="checkbox" class="is-clickable" />
-                        <input type="text" class="is-size-5" value="${elemento.valor}" ${index !== itemAEditar ? 'disabled' : ''}></input>
+                        <input type="text" class="is-size-5" value="${elemento.valor}" ${index !== Number(itemAEditar) ? 'disabled' : ''}></input>
                     </div>
                     <div>
                         ${ index === Number(itemAEditar) ? '<button onclick="salvarEdicao()"><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i>'}
@@ -92,6 +104,8 @@ function mostrarItem() {
             mostrarItem();
         });
     })
+
+    atualizaLocalStorage();
 }
 
 function salvarEdicao() {
