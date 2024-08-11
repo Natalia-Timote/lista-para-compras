@@ -1,38 +1,22 @@
-#Projeto Lista de Compras - Utilizado no Curso Objetos no JavaScript - Escola Front-End Alura
+# Lista de compras
 
-Neste arquivo encontram-se modelos de códigos que serão utilizados no decorrer do curso. 
+  Este projeto foi desenvolvido através do curso "JavaScript: manipulando objetos", da Alura. 
 
-Código modelo da li "Comprados":
+![Static Badge](https://img.shields.io/badge/Conclu%C3%ADdo-label?style=for-the-badge&label=Status) ![Static Badge](https://img.shields.io/badge/Alura-label?style=for-the-badge&label=Curso&color=%23000080)
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" checked class="is-clickable" />  
-            <span class="itens-comprados is-size-5"></span>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+<hr>
 
-Código modelo da li "Lista de compras": 
+## Objetivos do curso
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" class="is-clickable" />
-            <input type="text" class="is-size-5" value=""></input>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+* Entender o que são e como manipular objetos no JavaScript;
+* Conectar o projeto a um armazenador de dados do navegador(a API localStorage);
+* Implementar métodos para manipulação de elementos no DOM;
+* Conhecer características de desenvolvimento de código em JavaScript;
+* Criar métodos para receber dados da pessoa usuária.
 
-Input com código refatorado:
+## Tecnologias aprofundadas durante o curso
 
-    <div>
-        <input type="checkbox" checked class="is-clickable" />  
-        <span class="itens-comprados is-size-5">${elemento.valor}</span>
-    </div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="80" height="80"/>
 
-Ícones de edição:
-
-    <i class="fa-regular fa-floppy-disk is-clickable"></i><i class="fa-regular is-clickable fa-pen-to-square editar"></i>
+## Visualização do projeto
+<a href="https://lista-para-compras.vercel.app/" target="_blank">![Static Badge](https://img.shields.io/badge/Vercel-project?style=for-the-badge&color=A91079)</a>
