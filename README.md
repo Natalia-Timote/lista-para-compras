@@ -17,7 +17,7 @@ A ideia central foi trabalhar a **manipulação de objetos no JavaScript**, inte
 ## 📚 Objetivos do Curso
 
 * Entender o que são e como **manipular objetos no JavaScript**;
-* Conectar o projeto a um armazenador de dados do navegador(a **API localStorage**);
+* Conectar o projeto a um armazenador de dados do navegador (a **API localStorage**);
 * Implementar métodos para manipulação de elementos no **DOM**;
 * Conhecer características de desenvolvimento de código em JavaScript;
 * Criar métodos para receber dados da pessoa usuária.
